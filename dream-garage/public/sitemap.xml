@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://dream-garage.vercel.app/</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Garage Pages -->
+  <url>
+    <loc>https://dream-garage.vercel.app/garage</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dream-garage.vercel.app/garage/grid</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dream-garage.vercel.app/garage/carousel</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dream-garage.vercel.app/garage/3d-garage</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Car Detail Pages -->
+  <url>
+    <loc>https://dream-garage.vercel.app/car/toyota-supra-mk4</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dream-garage.vercel.app/car/bmw-m4-competition</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dream-garage.vercel.app/car/dodge-challenger-hellcat</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dream-garage.vercel.app/car/dodge-challenger-demon-170</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dream-garage.vercel.app/car/ford-mustang-gt</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Comparison Page -->
+  <url>
+    <loc>https://dream-garage.vercel.app/compare</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Configure Page -->
+  <url>
+    <loc>https://dream-garage.vercel.app/configure</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Static Assets -->
+  <url>
+    <loc>https://dream-garage.vercel.app/favicon.ico</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://dream-garage.vercel.app/og-image.png</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

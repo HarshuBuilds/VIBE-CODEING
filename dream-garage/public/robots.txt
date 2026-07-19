@@ -1,0 +1,31 @@
+# Dream Garage Robots.txt
+# https://dream-garage.vercel.app/robots.txt
+
+User-agent: *
+
+# Allow all pages to be crawled
+Allow: /
+
+# Sitemap location
+Sitemap: https://dream-garage.vercel.app/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 2
+
+# Specific pages to allow
+Allow: /$
+Allow: /garage
+Allow: /car/*
+Allow: /compare
+Allow: /configure
+
+# Specific pages to disallow (if any)
+# Disallow: /private
+# Disallow: /admin
+
+# User-agents to disallow (if any)
+# User-agent: BadBot
+# Disallow: /
+
+# Host directive (for Google)
+Host: dream-garage.vercel.app

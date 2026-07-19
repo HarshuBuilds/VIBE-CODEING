@@ -1,0 +1,48 @@
+# Placeholder for 3D assets
+# Add your GLB/GLTF models, textures, sounds, and HDRI files here
+
+# Recommended structure:
+# assets/
+# ├── models/
+# │   ├── toyota-supra-mk4.glb
+# │   ├── bmw-m4-competition.glb
+# │   ├── dodge-challenger-hellcat.glb
+# │   ├── dodge-challenger-demon-170.glb
+# │   └── ford-mustang-gt.glb
+# ├── textures/
+# │   ├── toyota-supra-thumbnail.jpg
+# │   ├── bmw-m4-thumbnail.jpg
+# │   ├── dodge-hellcat-thumbnail.jpg
+# │   ├── dodge-demon-thumbnail.jpg
+# │   └── ford-mustang-thumbnail.jpg
+# ├── sounds/
+# │   ├── supra/
+# │   │   ├── engine-start.mp3
+# │   │   ├── engine-idle.mp3
+# │   │   ├── engine-rev.mp3
+# │   │   ├── engine-acceleration.mp3
+# │   │   ├── engine-limiter.mp3
+# │   │   └── engine-stop.mp3
+# │   ├── m4/
+# │   │   ├── engine-start.mp3
+# │   │   ├── engine-idle.mp3
+# │   │   ├── engine-rev.mp3
+# │   │   ├── engine-acceleration.mp3
+# │   │   ├── engine-limiter.mp3
+# │   │   └── engine-stop.mp3
+# │   ├── hellcat/
+# │   │   ├── ...
+# │   ├── demon/
+# │   │   ├── ...
+# │   └── mustang/
+# │       ├── ...
+# └── hdri/
+#     ├── day.hdr
+#     ├── sunset.hdr
+#     ├── night.hdr
+#     ├── studio.hdr
+#     ├── garage.hdr
+#     └── rainy.hdr
+
+# All assets must be properly licensed (CC0, Creative Commons, or commercial license)
+# See ASSET_LICENSES.md for more information
