@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { cars } from '@/data/cars';
+import { creator } from '@/data/creator';
 
 // About Section component
 export const AboutSection = () => {
@@ -18,7 +19,7 @@ export const AboutSection = () => {
           <span className="badge badge-primary mb-4">About</span>
           <h2 className="section-title">The Ultimate Automotive Experience</h2>
           <p className="section-subtitle">
-            Dream Garage brings the world's most iconic cars to life in stunning 3D.
+            {creator.passion}
           </p>
         </motion.div>
 
@@ -32,9 +33,11 @@ export const AboutSection = () => {
             className="space-y-6"
           >
             <p className="text-dark-300 text-lg">
-              Immerse yourself in a premium 3D showcase featuring the most legendary cars in automotive history. 
-              From the iconic Toyota Supra MK4 to the monstrous Dodge Challenger SRT Demon 170, 
-              experience every detail like never before.
+              <span className="text-white font-medium">Dream Garage</span> is my passion project, born from a lifelong love of cars and a deep appreciation for automotive engineering. As {creator.name.split(' ')[0]}, I've combined my technical skills with my enthusiasm for automobiles to create this immersive 3D experience.
+            </p>
+
+            <p className="text-dark-300 text-lg">
+              This website is more than just a showcase - it's a tribute to the machines that have shaped automotive history. From the legendary Toyota Supra MK4 to the monstrous Dodge Challenger SRT Demon 170, each car represents the pinnacle of engineering and design.
             </p>
 
             <div className="space-y-4">
@@ -52,7 +55,7 @@ export const AboutSection = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-white">Interactive 3D Models</h3>
                   <p className="text-dark-400">
-                    Rotate, zoom, and explore every angle of your dream cars with smooth, responsive controls.
+                    Rotate, zoom, and explore every angle of your dream cars with smooth, responsive controls. Experience the details like never before.
                   </p>
                 </div>
               </div>
@@ -71,7 +74,7 @@ export const AboutSection = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-white">Customize Your Ride</h3>
                   <p className="text-dark-400">
-                    Change paint colors, wheel styles, and more to create your perfect configuration.
+                    Change paint colors, wheel styles, and more to create your perfect configuration. Make each car uniquely yours.
                   </p>
                 </div>
               </div>
@@ -90,7 +93,7 @@ export const AboutSection = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-white">Compare & Analyze</h3>
                   <p className="text-dark-400">
-                    Compare specs, performance metrics, and see which car comes out on top.
+                    Compare specs, performance metrics, and see which car comes out on top. Make informed decisions with detailed analysis.
                   </p>
                 </div>
               </div>
@@ -122,6 +125,13 @@ export const AboutSection = () => {
                 <div className="w-64 h-32 bg-dark-600/80 rounded-xl" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+              
+              {/* Creator watermark */}
+              <div className="absolute bottom-4 right-4 bg-black/60 backdrop-blur-sm rounded-lg px-3 py-2">
+                <p className="text-white text-sm font-medium">
+                  Created by {creator.name.split(' ')[0]}
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>

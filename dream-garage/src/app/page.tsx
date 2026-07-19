@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { useStore } from '@/store/useStore';
 import { HeroSection } from '@/components/HeroSection';
 import { FeaturedCars } from '@/components/FeaturedCars';
+import { CreatorSection } from '@/components/CreatorSection';
 import { AboutSection } from '@/components/AboutSection';
 import { StatsSection } from '@/components/StatsSection';
 import { Footer } from '@/components/Footer';
@@ -31,6 +32,9 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection onEnterGarage={handleEnterGarage} />
+
+      {/* Creator Section - Added at the top to showcase you! */}
+      <CreatorSection />
 
       {/* Featured Cars Section */}
       <FeaturedCars />

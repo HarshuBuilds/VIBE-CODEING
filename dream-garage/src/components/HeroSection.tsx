@@ -4,10 +4,11 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Environment, ContactShadows, useGLTF } from '@react-three/drei';
+import { OrbitControls, Environment, ContactShadows } from '@react-three/drei';
 import * as THREE from 'three';
 import { cars } from '@/data/cars';
 import { useStore } from '@/store/useStore';
+import { creator } from '@/data/creator';
 
 // Floating particles component
 const Particles = () => {
@@ -28,9 +29,9 @@ const Particles = () => {
     const positions = particles.current.attributes.position.array as Float32Array;
     
     for (let i = 0; i < count; i++) {
-      const i3 = i * 3;
-      positions[i3 + 1] += Math.sin(state.clock.elapsedTime * 0.5 + i) * 0.01;
-      if (positions[i3 + 1] > 5) positions[i3 + 1] = -5;
+      positions[i * 3] += Math.sin(state.clock.elapsedTime * 0.5 + i) * 0.01;
+      positions[i * 3 + 1] += Math.sin(state.clock.elapsedTime * 0.3 + i) * 0.01;
+      positions[i * 3 + 2] += Math.cos(state.clock.elapsedTime * 0.4 + i) * 0.01;
     }
 
     particles.current.attributes.position.needsUpdate = true;
@@ -245,6 +246,16 @@ export const HeroSection = ({ onEnterGarage }: HeroSectionProps) => {
             MY DREAM GARAGE
           </motion.h1>
 
+          {/* Creator Attribution */}
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.35 }}
+            className="text-lg text-primary-400 font-medium mt-2"
+          >
+            Created by {creator.name}
+          </motion.p>
+
           {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -262,7 +273,7 @@ export const HeroSection = ({ onEnterGarage }: HeroSectionProps) => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-dark-400 mt-4 max-w-2xl mx-auto"
           >
-            Explore the world's most iconic cars in stunning 3D. Configure, compare, and experience automotive excellence like never before.
+            Explore the world's most iconic cars in stunning 3D. Configure, compare, and admire the finest automotive masterpieces.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -286,8 +297,10 @@ export const HeroSection = ({ onEnterGarage }: HeroSectionProps) => {
               </svg>
               Enter Garage
             </button>
-            <button
-              onClick={() => router.push('/garage')}
+            <a
+              href={creator.website}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-glass px-8 py-4 text-lg font-semibold hover-scale"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -295,11 +308,11 @@ export const HeroSection = ({ onEnterGarage }: HeroSectionProps) => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
                 />
               </svg>
-              Browse Collection
-            </button>
+              Visit My Portfolio
+            </a>
           </motion.div>
 
           {/* Stats Preview */}

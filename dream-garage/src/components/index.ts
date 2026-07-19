@@ -11,9 +11,11 @@ export { SortOptions } from './SortOptions';
 export { Notifications } from './Notifications';
 export { LoadingScreen } from './LoadingScreen';
 export { KeyboardShortcuts } from './KeyboardShortcuts';
+export { CreatorBadge } from './CreatorBadge';
 
 export { HeroSection } from './HeroSection';
 export { FeaturedCars } from './FeaturedCars';
+export { CreatorSection } from './CreatorSection';
 export { AboutSection } from './AboutSection';
 export { StatsSection } from './StatsSection';
 export { Footer } from './Footer';
@@ -46,8 +48,10 @@ export default {
   Notifications,
   LoadingScreen,
   KeyboardShortcuts,
+  CreatorBadge,
   HeroSection,
   FeaturedCars,
+  CreatorSection,
   AboutSection,
   StatsSection,
   Footer,

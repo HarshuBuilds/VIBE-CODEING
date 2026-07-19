@@ -1,3 +1,5 @@
+'use client';
+
 import type { Metadata, Viewport } from 'next';
 import { Inter, Playfair_Display, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
@@ -6,6 +8,7 @@ import { Header } from '@/components/Header';
 import { Notifications } from '@/components/Notifications';
 import { LoadingScreen } from '@/components/LoadingScreen';
 import { KeyboardShortcuts } from '@/components/KeyboardShortcuts';
+import { CreatorBadge } from '@/components/CreatorBadge';
 
 // Font configurations
 const inter = Inter({
@@ -28,13 +31,13 @@ const jetBrains = JetBrains_Mono({
 
 // Metadata
 export const metadata: Metadata = {
-  title: 'Dream Garage - Premium 3D Automotive Showcase',
-  description: 'Explore your dream cars in an immersive 3D experience. Configure, compare, and admire the finest automotive masterpieces.',
-  keywords: ['cars', '3D', 'automotive', 'showcase', 'configurator', 'garage', 'performance', 'luxury'],
-  authors: [{ name: 'Dream Garage' }],
+  title: 'Dream Garage - Premium 3D Automotive Showcase by HARSHVARDHAN SINGH CHAUHAN',
+  description: 'Explore your dream cars in an immersive 3D experience. Configure, compare, and admire the finest automotive masterpieces. Created by HARSHVARDHAN SINGH CHAUHAN.',
+  keywords: ['cars', '3D', 'automotive', 'showcase', 'configurator', 'garage', 'performance', 'luxury', 'HARSHVARDHAN SINGH CHAUHAN'],
+  authors: [{ name: 'HARSHVARDHAN SINGH CHAUHAN' }],
   openGraph: {
     title: 'Dream Garage - Premium 3D Automotive Showcase',
-    description: 'Explore your dream cars in an immersive 3D experience.',
+    description: 'Explore your dream cars in an immersive 3D experience. Created by HARSHVARDHAN SINGH CHAUHAN.',
     url: 'https://dream-garage.vercel.app',
     siteName: 'Dream Garage',
     images: [
@@ -51,8 +54,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dream Garage - Premium 3D Automotive Showcase',
-    description: 'Explore your dream cars in an immersive 3D experience.',
+    description: 'Explore your dream cars in an immersive 3D experience. Created by HARSHVARDHAN SINGH CHAUHAN.',
     images: ['/og-image.png'],
+    creator: '@HarshuBuilds',
   },
   robots: {
     index: true,
@@ -115,6 +119,9 @@ export default function RootLayout({
             
             {/* Keyboard Shortcuts Help */}
             <KeyboardShortcuts />
+            
+            {/* Creator Badge - Floating badge */}
+            <CreatorBadge />
           </div>
         </Providers>
       </body>
